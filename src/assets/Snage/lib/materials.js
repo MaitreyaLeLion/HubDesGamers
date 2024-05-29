@@ -4,10 +4,7 @@ import * as BABYLON from "@babylonjs/core";
 
 function createHeadMaterial(scene) {
   const headMaterial = new BABYLON.StandardMaterial("headMaterial", scene);
-  const headTexture = new BABYLON.Texture(
-    "./Assets/textures/head_up.png",
-    scene
-  );
+  const headTexture = new BABYLON.Texture("./textures/head_up.png", scene);
   headTexture.hasAlpha = true;
   headMaterial.disableLighting = true;
   headMaterial.emissiveColor = BABYLON.Color3.White();
@@ -22,7 +19,7 @@ function createBodyStraightMaterial(scene) {
     scene
   );
   const bodyStraightTexture = new BABYLON.Texture(
-    "./Assets/textures/body_vertical.png",
+    "./textures/body_vertical.png",
     scene
   );
   bodyStraightTexture.hasAlpha = true;
@@ -39,7 +36,7 @@ function createBodyCurvedRightMaterial(scene) {
     scene
   );
   const bodyCurvedRightTexture = new BABYLON.Texture(
-    "./Assets/textures/body_corner_right.png",
+    "./textures/body_corner_right.png",
     scene
   );
   bodyCurvedRightTexture.hasAlpha = true;
@@ -56,7 +53,7 @@ function createBodyCurvedLeftMaterial(scene) {
     scene
   );
   const bodyCurvedLeftTexture = new BABYLON.Texture(
-    "./Assets/textures/body_corner_left.png",
+    "./textures/body_corner_left.png",
     scene
   );
   bodyCurvedLeftTexture.hasAlpha = true;
@@ -69,10 +66,7 @@ function createBodyCurvedLeftMaterial(scene) {
 
 function createTailMaterial(scene) {
   const tailMaterial = new BABYLON.StandardMaterial("tailMaterial", scene);
-  const tailTexture = new BABYLON.Texture(
-    "./Assets/textures/tail_down.png",
-    scene
-  );
+  const tailTexture = new BABYLON.Texture("./textures/tail_down.png", scene);
   tailTexture.hasAlpha = true;
   tailMaterial.disableLighting = true;
   tailMaterial.emissiveColor = BABYLON.Color3.White();
