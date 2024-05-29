@@ -7,7 +7,7 @@ import {
   createAppleMaterial,
   createGround2DMaterial,
 } from "/Snage/Assets/lib/materials.js";
-import * as BABYLON from "@babylonjs/core";
+import * as BABYLON from "/../../node_modules/@babylonjs/core";
 
 class Snake {
   constructor(scene, taille, parent) {
