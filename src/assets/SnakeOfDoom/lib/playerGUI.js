@@ -1,7 +1,7 @@
 class playerGUI {
   constructor(scene, lifePoints) {
     this.maxLife = lifePoints;
-    this.advancedTexture = GUI.AdvancedDynamicTexture.CreateFullscreenUI(
+    this.advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI(
       "UI",
       true,
       scene
