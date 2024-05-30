@@ -1,5 +1,4 @@
-import * as BABYLON from "@babylonjs/core";
-import { spawnRedAppleProjectile } from "@attacks";
+import { spawnRedAppleProjectile } from "/HubDesGamers/src/assets/SnakeOfDoom/lib/attacks.js";
 
 class GreenApple {
   constructor(scene, position) {
@@ -8,7 +7,7 @@ class GreenApple {
 
     this.spriteManager = new BABYLON.SpriteManager(
       "greenAppleManager",
-      "./Assets/textures/GreenAppleSprites.png",
+      "/HubDesGamers/src/assets/SnakeOfDoom/textures/GreenAppleSprites.png",
       1,
       { width: 16, height: 16 },
       scene
@@ -41,7 +40,7 @@ class RedApple {
 
     this.spriteManager = new BABYLON.SpriteManager(
       "redAppleManager",
-      "./Assets/textures/RedAppleSprites.png",
+      "/HubDesGamers/src/assets/SnakeOfDoom/textures/RedAppleSprites.png",
       1,
       { width: 16, height: 16 },
       scene

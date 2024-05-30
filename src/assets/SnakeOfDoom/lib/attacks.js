@@ -1,5 +1,7 @@
-import * as BABYLON from "@babylonjs/core";
-import { getSprites, isColliding } from "./globalFunc.js";
+import {
+  getSprites,
+  isColliding,
+} from "/HubDesGamers/src/assets/SnakeOfDoom/lib/globalFunc.js";
 
 class ToxicSpit {
   constructor(scene, position, direction) {
@@ -11,7 +13,7 @@ class ToxicSpit {
     this.hasCollided = false;
     this.spriteManager = new BABYLON.SpriteManager(
       "toxicSpitManager",
-      "./Assets/textures/ToxicSpitSprites.png",
+      "/HubDesGamers/src/assets/SnakeOfDoom/textures/ToxicSpitSprites.png",
       1,
       { width: 32, height: 32 },
       this.scene
@@ -75,7 +77,7 @@ class RedAppleProjectile {
     this.hasCollided = false;
     this.spriteManager = new BABYLON.SpriteManager(
       "redAppleProjectileManager",
-      "./Assets/textures/RedAppleProjectileSprites.png",
+      "/HubDesGamers/src/assets/SnakeOfDoom/textures/RedAppleProjectileSprites.png",
       1,
       { width: 32, height: 32 },
       this.scene

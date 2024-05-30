@@ -1,5 +1,3 @@
-import * as GUI from "@babylonjs/gui";
-
 class playerGUI {
   constructor(scene, lifePoints) {
     this.maxLife = lifePoints;

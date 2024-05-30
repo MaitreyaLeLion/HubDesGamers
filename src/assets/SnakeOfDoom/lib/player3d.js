@@ -1,7 +1,10 @@
-import * as BABYLON from "@babylonjs/core";
-import { spawnToxicSpit } from "@attacks";
-import { getSprites, isColliding, multiplyByRotation } from "@globalFunc";
-import { createGUI } from "@playerGUI";
+import { spawnToxicSpit } from "/HubDesGamers/src/assets/SnakeOfDoom/lib/attacks.js";
+import {
+  getSprites,
+  isColliding,
+  multiplyByRotation,
+} from "/HubDesGamers/src/assets/SnakeOfDoom/lib/globalFunc.js";
+import { createGUI } from "/HubDesGamers/src/assets/SnakeOfDoom/lib/playerGUI.js";
 
 class Player3D {
   constructor(scene, position, camera) {

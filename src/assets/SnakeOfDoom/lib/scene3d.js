@@ -1,7 +1,8 @@
-import * as BABYLON from "@babylonjs/core";
-import "@babylonjs/loaders/glTF";
-import { spawnGreenApple, spawnRedApple } from "@enemie";
-import { createPlayer3D } from "./player3d";
+import {
+  spawnGreenApple,
+  spawnRedApple,
+} from "/HubDesGamers/src/assets/SnakeOfDoom/lib/enemie.js";
+import { createPlayer3D } from "/HubDesGamers/src/assets/SnakeOfDoom/lib/player3d.js";
 
 class Scene3D {
   constructor(engine) {
@@ -41,7 +42,7 @@ class Scene3D {
       })
       .then(() => {
         this.addGlbModelToScene(
-          "./Assets/models/",
+          "/HubDesGamers/src/assets/SnakeOfDoom/models/",
           "Level_1_LowPoly.glb",
           new BABYLON.Vector3(0, -4, 0),
           true

@@ -1,5 +1,4 @@
-import * as BABYLON from "@babylonjs/core";
-import { createScene3D } from "@scene3d";
+import { createScene3D } from "/HubDesGamers/src/assets/SnakeOfDoom/lib/scene3d.js";
 
 const canvas = document.getElementById("renderCanvas");
 const engine = new BABYLON.Engine(canvas);

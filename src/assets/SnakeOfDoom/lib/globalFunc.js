@@ -1,5 +1,3 @@
-import * as BABYLON from "@babylonjs/core";
-
 function getSprites(scene) {
   const sprites = [];
   scene.spriteManagers.forEach((spriteManager) => {
