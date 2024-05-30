@@ -10,7 +10,7 @@ export default defineConfig({
       "top-level-await": true, //browsers can handle top-level-await features
     },
   },
-  // Other Vite configuration options...
+
   resolve: {
     alias: {
       "@enemie": "/SnakeOfDoom/Assets/lib/enemie.js", // Replace with the actual path to your enemie.js file
