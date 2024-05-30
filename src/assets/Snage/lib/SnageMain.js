@@ -19,7 +19,7 @@ let startRenderLoop = function (engine, canvas) {
 };
 
 startRenderLoop(engine, canvas);
-
+// resize the canvas when the window is resized
 window.addEventListener("resize", function () {
   const camera = scene2D._activeCamera;
   const newAspectRatio = engine.getRenderWidth() / engine.getRenderHeight();
