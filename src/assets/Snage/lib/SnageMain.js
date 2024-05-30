@@ -1,5 +1,5 @@
-import { createScene2D } from "/Snage/Assets/lib/scene2d.js";
-import * as BABYLON from "/../../node_modules/@babylonjs/core";
+import { createScene2D } from "/src/assets/Snage/lib/scene2d.js";
+import * as BABYLON from "/node_modules/@babylonjs/core";
 
 const canvas = document.getElementById("renderCanvas");
 const engine = new BABYLON.Engine(canvas);
