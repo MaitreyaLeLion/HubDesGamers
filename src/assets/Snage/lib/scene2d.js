@@ -4,6 +4,7 @@ import {
   createAppleMaterial,
 } from "/HubDesGamers/src/assets/Snage/lib/materials.js";
 
+// 2D Scene
 class Scene2D {
   constructor(engine, taille) {
     this.engine = engine;
