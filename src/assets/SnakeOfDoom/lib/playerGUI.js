@@ -12,7 +12,8 @@ class playerGUI {
     ammoText.color = "black";
     ammoText.fontSize = 24;
     ammoText.top = "-10px";
-    ammoText.horizontalAlignment = Control.HORIZONTAL_ALIGNMENT_RIGHT;
+    ammoText.horizontalAlignment =
+      BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
     bottomRect.addControl(ammoText);
   }
   background() {
