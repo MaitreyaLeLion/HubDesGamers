@@ -1,4 +1,4 @@
-import * as BABYLON from "/../../node_modules/@babylonjs/core";
+import * as BABYLON from "/node_modules/@babylonjs/core";
 
 // 2D materials
 
