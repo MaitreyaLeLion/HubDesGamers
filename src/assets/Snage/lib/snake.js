@@ -63,6 +63,7 @@ class Snake {
       }
     });
   }
+  // Crée les matériaux du serpent
   createMaterials() {
     this.headMaterial = createHeadMaterial(this.scene);
     this.bodyStraightMaterial = createBodyStraightMaterial(this.scene);
