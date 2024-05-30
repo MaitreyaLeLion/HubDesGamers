@@ -1,5 +1,3 @@
-import * as BABYLON from "/HubDesGamers/node_modules/@babylonjs/core";
-
 // 2D materials and textures
 
 function createHeadMaterial(scene) {
