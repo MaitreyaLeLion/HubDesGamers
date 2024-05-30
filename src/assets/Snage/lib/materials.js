@@ -1,10 +1,13 @@
-import * as BABYLON from "/node_modules/@babylonjs/core";
+import * as BABYLON from "/HubDesGamers/node_modules/@babylonjs/core";
 
 // 2D materials
 
 function createHeadMaterial(scene) {
   const headMaterial = new BABYLON.StandardMaterial("headMaterial", scene);
-  const headTexture = new BABYLON.Texture(localpath +"/textures/head_up.png", scene);
+  const headTexture = new BABYLON.Texture(
+    localpath + "/textures/head_up.png",
+    scene
+  );
   headTexture.hasAlpha = true;
   headMaterial.disableLighting = true;
   headMaterial.emissiveColor = BABYLON.Color3.White();
@@ -19,7 +22,7 @@ function createBodyStraightMaterial(scene) {
     scene
   );
   const bodyStraightTexture = new BABYLON.Texture(
-    localpath +"/textures/body_vertical.png",
+    localpath + "/textures/body_vertical.png",
     scene
   );
   bodyStraightTexture.hasAlpha = true;
@@ -36,7 +39,7 @@ function createBodyCurvedRightMaterial(scene) {
     scene
   );
   const bodyCurvedRightTexture = new BABYLON.Texture(
-    localpath +"/textures/body_corner_right.png",
+    localpath + "/textures/body_corner_right.png",
     scene
   );
   bodyCurvedRightTexture.hasAlpha = true;
@@ -53,7 +56,7 @@ function createBodyCurvedLeftMaterial(scene) {
     scene
   );
   const bodyCurvedLeftTexture = new BABYLON.Texture(
-    localpath +"/textures/body_corner_left.png",
+    localpath + "/textures/body_corner_left.png",
     scene
   );
   bodyCurvedLeftTexture.hasAlpha = true;
@@ -66,7 +69,10 @@ function createBodyCurvedLeftMaterial(scene) {
 
 function createTailMaterial(scene) {
   const tailMaterial = new BABYLON.StandardMaterial("tailMaterial", scene);
-  const tailTexture = new BABYLON.Texture(localpath +"/textures/tail_down.png", scene);
+  const tailTexture = new BABYLON.Texture(
+    localpath + "/textures/tail_down.png",
+    scene
+  );
   tailTexture.hasAlpha = true;
   tailMaterial.disableLighting = true;
   tailMaterial.emissiveColor = BABYLON.Color3.White();
@@ -89,7 +95,7 @@ function createGround2DMaterial(scene) {
 }
 
 // 3D materials
-localpath = "src/assets/Snage"
+localpath = "/HubDesGamers/src/assets/Snage";
 export {
   createHeadMaterial,
   createBodyStraightMaterial,

@@ -6,8 +6,8 @@ import {
   createTailMaterial,
   createAppleMaterial,
   createGround2DMaterial,
-} from "/src/assets/Snage/lib/materials.js";
-import * as BABYLON from "/node_modules/@babylonjs/core";
+} from "/HubDesGamers/src/assets/Snage/lib/materials.js";
+import * as BABYLON from "/HubDesGamers/node_modules/@babylonjs/core";
 
 class Snake {
   constructor(scene, taille, parent) {
