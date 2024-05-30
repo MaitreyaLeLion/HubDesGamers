@@ -13,7 +13,6 @@
   "devDependencies": {
     "@babylonjs/core": "^6.49.0",
     "@babylonjs/inspector": "^6.45.1",
-    "gh-pages": "^6.1.1",
     "vite": "^5.1.4"
   },
   "dependencies": {
