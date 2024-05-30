@@ -1,11 +1,8 @@
 class playerGUI {
   constructor(scene, lifePoints) {
     this.maxLife = lifePoints;
-    this.advancedTexture = AdvancedDynamicTexture.CreateFullscreenUI(
-      "UI",
-      true,
-      scene
-    );
+    this.advancedTexture =
+      BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI", true, scene);
     this.background();
     this.panel();
   }
