@@ -10,12 +10,12 @@ class playerGUI {
     this.panel();
   }
   ammoCount(bottomRect) {
-    let ammoText = new GUI.TextBlock();
+    let ammoText = new TextBlock();
     ammoText.text = "Ammo: 100";
     ammoText.color = "black";
     ammoText.fontSize = 24;
     ammoText.top = "-10px";
-    ammoText.horizontalAlignment = GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
+    ammoText.horizontalAlignment = Control.HORIZONTAL_ALIGNMENT_RIGHT;
     bottomRect.addControl(ammoText);
   }
   background() {
