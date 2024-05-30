@@ -1,6 +1,6 @@
 // 2D materials and textures
 
-localpath = "/HubDesGamers/src/assets/Snage";
+const localpath = "/HubDesGamers/src/assets/Snage";
 
 function createHeadMaterial(scene) {
   const headMaterial = new BABYLON.StandardMaterial("headMaterial", scene);
