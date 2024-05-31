@@ -64,7 +64,7 @@ class playerGUI {
 }
 
 function createGUI(scene, lifePoints) {
-  return new playerBABYLON.GUI(scene, lifePoints);
+  return new playerGUI(scene, lifePoints);
 }
 
 export { createGUI };
