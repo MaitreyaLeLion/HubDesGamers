@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <title>New Super Pong Deluxe</title>
-		<link rel="stylesheet" href="style.css">
+    <title>New Super Pong Deluxe</title>
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- Babylon.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
-        <script src="https://assets.babylonjs.com/generated/Assets.js"></script>
-        <script src="https://cdn.babylonjs.com/recast.js"></script>
-        <script src="https://cdn.babylonjs.com/ammo.js"></script>
-        <script src="https://cdn.babylonjs.com/havok/HavokPhysics_umd.js"></script>
-        <script src="https://cdn.babylonjs.com/cannon.js"></script>
-        <script src="https://cdn.babylonjs.com/Oimo.js"></script>
-        <script src="https://cdn.babylonjs.com/earcut.min.js"></script>
-        <script src="https://cdn.babylonjs.com/babylon.js"></script>
-        <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
-        <script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
-        <script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
-        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.js"></script>
-        <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
-        <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
-        <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
-    </head>
-<body>
-<script src="difficulty.js">
-
-</script>
+    <!-- Babylon.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+    <script src="https://assets.babylonjs.com/generated/Assets.js"></script>
+    <script src="https://cdn.babylonjs.com/recast.js"></script>
+    <script src="https://cdn.babylonjs.com/ammo.js"></script>
+    <script src="https://cdn.babylonjs.com/havok/HavokPhysics_umd.js"></script>
+    <script src="https://cdn.babylonjs.com/cannon.js"></script>
+    <script src="https://cdn.babylonjs.com/Oimo.js"></script>
+    <script src="https://cdn.babylonjs.com/earcut.min.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+    <script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+    <script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+    <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+    <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+    <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+  </head>
+  <body>
+    <script src="/HubDesGamers/src/assets/NSPD/difficulty.js"></script>
     <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
-	<div id="menuContainer">
-	<div id="scoreOrdinateur">Score Ordinateur: 0</div>
-  <select id="menuDeroulant" onchange="changerVariable()">
-    <option value="option1">Facile</option>
-    <option value="option2">Intermédiaire</option>
-    <option value="option3">Difficile</option>
-	<option value="option4">Imbattable (littéralement)</option>
-  </select>
-  <div id="scoreJoueur">Score Joueur: 0</div>
-
-</div>
-    <script type="module" src="main.js">
-    </script>
-</body>
+    <div id="menuContainer">
+      <div id="scoreOrdinateur">Score Ordinateur: 0</div>
+      <select id="menuDeroulant" onchange="changerVariable()">
+        <option value="option1">Facile</option>
+        <option value="option2">Intermédiaire</option>
+        <option value="option3">Difficile</option>
+        <option value="option4">Imbattable (littéralement)</option>
+      </select>
+      <div id="scoreJoueur">Score Joueur: 0</div>
+    </div>
+    <script type="module" src="/HubDesGamers/src/assets/NSPD/main.js"></script>
+  </body>
 </html>
