@@ -7,7 +7,7 @@ class playerGUI {
     this.panel();
   }
   ammoCount(bottomRect) {
-    let ammoText = new TextBlock();
+    let ammoText = new BABYLON.GUI.TextBlock();
     ammoText.text = "Ammo: 100";
     ammoText.color = "black";
     ammoText.fontSize = 24;
