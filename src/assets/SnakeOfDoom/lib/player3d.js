@@ -73,6 +73,7 @@ class Player3D {
         let currentSpeed = velocity.length();
 
         if ((inputMap["z"] || inputMap["w"]) && currentSpeed < this.speed) {
+          console.log("forward");
           this.body.getDirectionToRef(new BABYLON.Vector3(0, 0, 1), direction);
           if (direction) {
             this.body.physicsBody.applyImpulse(
@@ -91,6 +92,7 @@ class Player3D {
           }
         }
         if (inputMap[" "]) {
+          console.log("jump");
           this.body.physicsBody.applyImpulse(
             new BABYLON.Vector3(0, 20, 0),
             new BABYLON.Vector3(0, 0, 0)
