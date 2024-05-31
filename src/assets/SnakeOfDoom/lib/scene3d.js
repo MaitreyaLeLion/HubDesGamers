@@ -123,7 +123,7 @@ class Scene3D {
         mesh.physicsAggregate = new BABYLON.PhysicsAggregate(
           mesh,
           BABYLON.PhysicsShapeType.MESH,
-          { mass: 0, friction: 500, restitution: 0 },
+          { mass: 0, friction: 2, restitution: 0 },
           this.scene
         );
         mesh.physicsAggregate.body = mesh;
