@@ -14,6 +14,9 @@ Pour il vous faut utiliser zqsd ou wasd pour vous déplacer, e pour tirée du ga
 Veuiller nous pardonner la simplicité de ce projet et sont manque d'originalité, il s'agit de notre premier projet et
 nous sommes seulement en première année de PeiP1 a polythèque Nice Sophia.
 
+Voici le lien pour jouer aux jeux : 
+https://maitreyalelion.github.io/HubDesGamers/
+
 PS : Snake of Doom n'est pas encore terminé
 MIT License
 
