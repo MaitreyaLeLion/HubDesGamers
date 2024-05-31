@@ -42,7 +42,7 @@ class playerGUI {
     this.health.color = "black";
     this.health.thickness = 2;
     this.health.background = "red";
-    panel.addControl(this.health); // Add the health bar to the panel
+    panel.addControl(this.health);
   }
   panel() {
     let panel = new BABYLON.GUI.StackPanel();
