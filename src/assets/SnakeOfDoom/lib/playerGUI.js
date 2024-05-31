@@ -17,25 +17,26 @@ class playerGUI {
     bottomRect.addControl(ammoText);
   }
   background() {
-    let bottomRect = new GUI.Rectangle();
+    let bottomRect = new BABYLON.GUI.Rectangle();
     bottomRect.width = 1;
     bottomRect.height = "100px";
     bottomRect.color = "black";
     bottomRect.thickness = 0;
     bottomRect.background = "white";
-    bottomRect.verticalAlignment = GUI.Control.VERTICAL_ALIGNMENT_BOTTOM;
+    bottomRect.verticalAlignment =
+      BABYLON.GUI.Control.VERTICAL_ALIGNMENT_BOTTOM;
     this.ammoCount(bottomRect);
     this.advancedTexture.addControl(bottomRect);
   }
   healthBar(panel) {
-    this.healthText = new GUI.TextBlock();
+    this.healthText = new BABYLON.GUI.TextBlock();
     this.healthText.text = "Health: 100%";
     this.healthText.color = "black";
     this.healthText.height = "20px";
     this.healthText.width = "200px";
     panel.addControl(this.healthText); // Add the text block to the panel
 
-    this.health = new GUI.Rectangle();
+    this.health = new BABYLON.GUI.Rectangle();
     this.health.width = 2 * this.maxLife + "px";
     this.health.height = "20px";
     this.health.color = "black";
@@ -44,12 +45,12 @@ class playerGUI {
     panel.addControl(this.health); // Add the health bar to the panel
   }
   panel() {
-    let panel = new GUI.StackPanel();
+    let panel = new BABYLON.GUI.StackPanel();
     panel.width = "400px";
     panel.height = "40px";
     panel.isVertical = false;
-    panel.horizontalAlignment = GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
-    panel.verticalAlignment = GUI.Control.VERTICAL_ALIGNMENT_BOTTOM;
+    panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+    panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_BOTTOM;
     this.healthBar(panel);
     this.advancedTexture.addControl(panel);
   }
@@ -63,7 +64,7 @@ class playerGUI {
 }
 
 function createGUI(scene, lifePoints) {
-  return new playerGUI(scene, lifePoints);
+  return new playerBABYLON.GUI(scene, lifePoints);
 }
 
 export { createGUI };
